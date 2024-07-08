@@ -29,7 +29,7 @@ const Navbar = () => {
     return (
         <>
 
-            <nav style={{ boxShadow: "0px 2px 8px 0px #9F9F9F33" }} className=' w-full h-[88px]  overflow-x-hidden flex justify-center items-center'>
+            <nav style={{ boxShadow: "0px 2px 8px 0px #9F9F9F33" }} className=' w-full h-[88px]  overflow-hidden flex justify-center items-center'>
                 <div className="max-w-[1440px] w-full py-10 px-4 md:px-0 flex items-center justify-between mx-auto">
                     <div>
                         <img src="logo.png" alt="" />
