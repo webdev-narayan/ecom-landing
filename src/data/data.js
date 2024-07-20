@@ -15,76 +15,92 @@ import cat5 from "../assets/cat5.png"
 
 export const products = [
     {
+        id: 1,
         name: "T-shirt Caro Lines",
         solds: "18 sold in last 8 hours",
         price: "26.00",
         colors: ["#E0A79D", "#332B3E", "#EFEFEF", "#DD621E"],
         discount: "50% Discount",
         size: "S",
-        image: product8
+        image: product8,
+        category: ["Men", "Women"]
     },
     {
+        id: 2,
         name: "Classic T-shirt Sleeves",
         solds: "18 sold in last 8 hours",
         price: "66.00",
         colors: ["#E0A79D", "#332B3E", "#EFEFEF", "#DD621E"],
         discount: false,
         size: "M",
-        image: product2
+        image: product2,
+        category: ["Men"]
     },
     {
+        id: 3,
         name: "T-shirt Caro Lines",
         solds: "8 sold in last 8 hours",
         price: "40.00",
         colors: ["#E0A79D", "#332B3E", "#EFEFEF", "#DD621E"],
         discount: "50% Discount",
         size: "L",
-        image: product3
+        image: product3,
+        category: ["ON Sale", "New"]
     },
     {
+        id: 4,
         name: "Pull Classic Cool",
         solds: "8 sold in last 8 hours",
         price: "30.00",
         colors: ["#E0A79D", "#332B3E", "#EFEFEF", "#DD621E"],
         discount: "50% Discount",
         size: "M",
-        image: product4
+        image: product4,
+        category: ["New", "Men"]
     },
     {
+        id: 5,
         name: "Pull Classic Cool",
         solds: "8 sold in last 8 hours",
         price: "30.00",
         colors: ["#E0A79D", "#332B3E", "#EFEFEF", "#DD621E"],
         discount: "50% Discount",
         size: "L",
-        image: product5
+        image: product5,
+        category: ["Women", "New"]
     },
     {
+        id: 6,
         name: "Elessi Knit Coats",
         solds: "20 sold in last 8 hours",
         price: "50.00",
         colors: ["#E0A79D", "#332B3E", "#EFEFEF", "#DD621E"],
         discount: "50% Discount",
         size: "S",
-        image: product6
+        image: product6,
+        category: ["ON Sale", "New"]
     },
     {
+        id: 7,
         name: "T-shirt Caro Lines",
         solds: "20 sold in last 8 hours",
         price: "50.00",
         colors: ["#E0A79D", "#332B3E", "#EFEFEF", "#DD621E"],
         discount: "50% Discount",
         size: "X",
-        image: product7
+        image: product7,
+        category: ["Women", "Men"]
     },
     {
+        id: 8,
         name: "Steady Coats",
         solds: "20 sold in last 8 hours",
         price: "50.00",
         colors: ["#E0A79D", "#332B3E", "#EFEFEF", "#DD621E"],
         discount: false,
         size: "L",
-        image: product1
+        image: product1,
+        category: ["New", "Women"]
     },
 ]
 

@@ -16,6 +16,9 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
 
 .soft-shadow {
   box-shadow:

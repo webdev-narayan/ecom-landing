@@ -19,7 +19,7 @@ const menus = [
 
 const Footer = () => {
     return (
-        <footer className="min-h-[423px] py-8 md:py-0">
+        <footer className="min-h-[423px] py-8 md:py-0 max-w-[1440px] mx-auto">
             <div className="flex flex-col gap-16">
                 <div className="flex justify-between flex-col md:flex-row md:gap-0 gap-6">
                     <div className="flex-1 flex md:gap-6 gap-3 flex-col md:items-start items-center">
@@ -43,9 +43,9 @@ const Footer = () => {
                     <div className="flex-1 flex md:justify-end ">
                         <div className="flex flex-col gap-6 mx-auto md:m-0">
                             <h3 className="text-xl font-medium">Newsletter</h3>
-                            <div className="border border-black flex items-center md:w-full md:flex-row md:ml-auto md:h-12 px-2 py-4 justify-between">
+                            <div className="border border-black flex items-center md:w-full md:flex-row md:ml-auto pl-4 rounded justify-between">
                                 <input type="email" placeholder="Your Email" className="outline-none text-sm w-32 md:w-full" />
-                                <Button title={"Subscribe"} className={"text-[10px] rounded"} />
+                                <Button title={"Subscribe"} className={"text-[10px] rounded-l-none rounded-r-sm py-3"} />
                             </div>
                             <img src={footerPay} />
                         </div>
