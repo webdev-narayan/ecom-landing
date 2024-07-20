@@ -2,7 +2,8 @@
 import { useState } from "react";
 import { CiHeart, CiUser, CiShoppingCart, CiSearch, CiMenuFries } from "react-icons/ci";
 import { IoCloseOutline } from "react-icons/io5";
-
+import logo from "../../public/logo.png"
+import { Link } from "react-router-dom";
 const navLinks = [
     {
         name: "men", route: "men",
@@ -29,6 +30,7 @@ const navLinks = [
         duration: "duration-[.9s]"
     },
 ]
+
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false)
 
@@ -37,15 +39,17 @@ const Navbar = () => {
 
             <nav style={{ boxShadow: "0px 2px 8px 0px #9F9F9F33" }} className=' w-full h-[88px]  overflow-hidden flex justify-center items-center'>
                 <div className="max-w-[1440px] w-full py-10 px-4 md:px-0 flex items-center justify-between mx-auto dura">
-                    <div>
-                        <img src="logo.png" alt="" />
-                    </div>
+                    <Link to={"/"}>
+                        <img src={logo} alt="" />
+                    </Link>
                     {/* desktop menu  */}
                     <div className='gap-8 hidden md:flex'>
                         {navLinks.map((item) => {
-                            return <span
-                                className='cursor-pointer capitalize text-base'
-                                key={item.name}>{item.name}</span>
+                            return <Link key={item.name} to={item.route}>
+                                <span
+                                    className='cursor-pointer capitalize text-base'
+                                    key={item.name}>{item.name}</span>
+                            </Link>
                         })}
                     </div>
                     <div className='hidden md:flex gap-4 text-black/70'>

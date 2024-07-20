@@ -19,7 +19,8 @@ const items = [
 
 const Discover = () => {
     return (
-        <div className="min-h-[940px] flex flex-col gap-6 justify-center px-4 md:px-0">
+        <div
+            className="min-h-[940px] flex flex-col gap-6 justify-center px-4 md:px-0">
             <span className="capitalize md:text-5xl text-2xl text-center md:text-start leading-snug text-black/90">
                 Discover more. Good things <br />
                 <span className="font-bold">are waiting for you</span>

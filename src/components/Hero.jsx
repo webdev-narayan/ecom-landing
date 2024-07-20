@@ -7,6 +7,8 @@ import svg4 from "../../public/4.svg";
 import svg5 from "../../public/5.svg";
 import svg6 from "../../public/6.svg";
 import user from "../../public/user.png"
+import { motion } from 'framer-motion';
+
 const items = [
     {
         position: "bottom-0 -right-10",
@@ -40,7 +42,11 @@ const items = [
 ]
 const Hero = () => {
     return (
-        <div className='bg-[#FEFFE3] rounded-2xl px-12 w-full mt-8 md:h-[450px] h-[300px] mx-auto relative flex flex-col pt-6 md:pt-0 md:justify-center'>
+        <motion.div
+            initial={{ opacity: 0, marginLeft: 100 }}
+            animate={{ opacity: 1, marginLeft: 0 }}
+            transition={{ duration: 0.5 }}
+            className='bg-[#FEFFE3] rounded-2xl px-12 w-full mt-8 md:h-[450px] h-[300px] mx-auto relative flex flex-col pt-6 md:pt-0 md:justify-center'>
             <div className='flex flex-col gap-4'>
                 <span>
                     In this season, find the best 🔥
@@ -58,7 +64,7 @@ const Hero = () => {
                 }
 
             </div>
-        </div>
+        </motion.div>
     )
 }
 
